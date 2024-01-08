@@ -1,0 +1,77 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes 
+Relation:     SVM_RFE_Selected_dataset_2-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last
+Instances:    2535
+Attributes:   6
+              history of diabetes
+              Family history of diabetes
+              History of aborted baby
+              History of pregnancy
+              result of  high blood pressure screening
+              Result of diabetes screening
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                                            Class
+Attribute                                       0      1
+                                           (0.09) (0.91)
+=========================================================
+history of diabetes
+  0                                          210.0 1971.0
+  1                                           10.0  348.0
+  [total]                                    220.0 2319.0
+
+Family history of diabetes
+  0                                          205.0 1557.0
+  1                                           15.0  762.0
+  [total]                                    220.0 2319.0
+
+History of aborted baby
+  0                                          213.0 1947.0
+  1                                            7.0  372.0
+  [total]                                    220.0 2319.0
+
+History of pregnancy
+  0                                          218.0 2298.0
+  1                                            2.0   21.0
+  [total]                                    220.0 2319.0
+
+result of  high blood pressure screening
+  0                                          194.0 1547.0
+  1                                           13.0  478.0
+  2                                           14.0  295.0
+  [total]                                    221.0 2320.0
+
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        2317               91.4004 %
+Incorrectly Classified Instances       218                8.5996 %
+Kappa statistic                          0     
+Mean absolute error                      0.1488
+Root mean squared error                  0.2705
+Relative absolute error                 94.4803 %
+Root relative squared error             96.4781 %
+Total Number of Instances             2535     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.000    0.000    ?          0.000    ?          ?        0.731     0.157     0
+                 1.000    1.000    0.914      1.000    0.955      ?        0.731     0.964     1
+Weighted Avg.    0.914    0.914    ?          0.914    ?          ?        0.731     0.895     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+    0  218 |    a = 0
+    0 2317 |    b = 1
+

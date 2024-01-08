@@ -1,0 +1,49 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     SVM_RFE_Selected-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last
+Instances:    768
+Attributes:   6
+              Pregnancies
+              Glucose
+              BMI
+              DiabetesPedigreeFunction
+              Age
+              Outcome
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 0.11 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         510               66.4063 %
+Incorrectly Classified Instances       258               33.5938 %
+Kappa statistic                          0.1828
+Mean absolute error                      0.4058
+Root mean squared error                  0.4626
+Relative absolute error                 89.2784 %
+Root relative squared error             97.0435 %
+Total Number of Instances              768     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.852    0.687    0.698      0.852    0.768      0.195    0.659     0.792     0
+                 0.313    0.148    0.532      0.313    0.394      0.195    0.659     0.503     1
+Weighted Avg.    0.664    0.499    0.640      0.664    0.637      0.195    0.659     0.691     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 426  74 |   a = 0
+ 184  84 |   b = 1
+

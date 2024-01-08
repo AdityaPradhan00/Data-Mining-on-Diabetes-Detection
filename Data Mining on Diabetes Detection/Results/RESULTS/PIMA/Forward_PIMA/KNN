@@ -1,0 +1,45 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     forward-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last
+Instances:    768
+Attributes:   4
+              Glucose
+              BMI
+              Pregnancies
+              Outcome
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         515               67.0573 %
+Incorrectly Classified Instances       253               32.9427 %
+Kappa statistic                          0.1994
+Mean absolute error                      0.3778
+Root mean squared error                  0.498 
+Relative absolute error                 83.1136 %
+Root relative squared error            104.479  %
+Total Number of Instances              768     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.856    0.675    0.703      0.856    0.772      0.212    0.666     0.783     0
+                 0.325    0.144    0.547      0.325    0.407      0.212    0.666     0.480     1
+Weighted Avg.    0.671    0.490    0.648      0.671    0.645      0.212    0.666     0.677     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 428  72 |   a = 0
+ 181  87 |   b = 1
+

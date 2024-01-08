@@ -1,0 +1,49 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     fscoreSelected-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last
+Instances:    768
+Attributes:   6
+              Glucose
+              SkinThickness
+              Insulin
+              BMI
+              Age
+              Outcome
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 0.2 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         506               65.8854 %
+Incorrectly Classified Instances       262               34.1146 %
+Kappa statistic                          0.0882
+Mean absolute error                      0.4173
+Root mean squared error                  0.462 
+Relative absolute error                 91.8053 %
+Root relative squared error             96.934  %
+Total Number of Instances              768     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.942    0.869    0.669      0.942    0.782      0.125    0.657     0.789     0
+                 0.131    0.058    0.547      0.131    0.211      0.125    0.657     0.468     1
+Weighted Avg.    0.659    0.586    0.626      0.659    0.583      0.125    0.657     0.677     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 471  29 |   a = 0
+ 233  35 |   b = 1
+

@@ -1,0 +1,47 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     PCCSelected_dataset_2-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last
+Instances:    2535
+Attributes:   6
+              BMI
+              Family history of diabetes
+              Systolic blood pressure
+              Diastolic blood pressure
+              result of  high blood pressure screening
+              Result of diabetes screening
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        2297               90.6114 %
+Incorrectly Classified Instances       238                9.3886 %
+Kappa statistic                          0.0825
+Mean absolute error                      0.1423
+Root mean squared error                  0.2847
+Relative absolute error                 90.3355 %
+Root relative squared error            101.5377 %
+Total Number of Instances             2535     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.069    0.015    0.300      0.069    0.112      0.108    0.688     0.174     0
+                 0.985    0.931    0.918      0.985    0.950      0.108    0.688     0.948     1
+Weighted Avg.    0.906    0.852    0.865      0.906    0.878      0.108    0.688     0.882     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+   15  203 |    a = 0
+   35 2282 |    b = 1
+

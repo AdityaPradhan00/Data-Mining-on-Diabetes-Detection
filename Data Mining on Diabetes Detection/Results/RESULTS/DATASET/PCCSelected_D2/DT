@@ -1,0 +1,52 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     PCCSelected_dataset_2-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last
+Instances:    2535
+Attributes:   6
+              BMI
+              Family history of diabetes
+              Systolic blood pressure
+              Diastolic blood pressure
+              result of  high blood pressure screening
+              Result of diabetes screening
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+: 1 (2535.0/218.0)
+
+Number of Leaves  : 	1
+
+Size of the tree : 	1
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        2317               91.4004 %
+Incorrectly Classified Instances       218                8.5996 %
+Kappa statistic                          0     
+Mean absolute error                      0.1572
+Root mean squared error                  0.2804
+Relative absolute error                 99.8094 %
+Root relative squared error             99.9999 %
+Total Number of Instances             2535     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.000    0.000    ?          0.000    ?          ?        0.496     0.085     0
+                 1.000    1.000    0.914      1.000    0.955      ?        0.496     0.913     1
+Weighted Avg.    0.914    0.914    ?          0.914    ?          ?        0.496     0.842     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+    0  218 |    a = 0
+    0 2317 |    b = 1
+

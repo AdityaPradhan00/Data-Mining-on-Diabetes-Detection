@@ -1,0 +1,47 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     fscoreSelected-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last
+Instances:    768
+Attributes:   6
+              Glucose
+              SkinThickness
+              Insulin
+              BMI
+              Age
+              Outcome
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         495               64.4531 %
+Incorrectly Classified Instances       273               35.5469 %
+Kappa statistic                          0.1159
+Mean absolute error                      0.3914
+Root mean squared error                  0.524 
+Relative absolute error                 86.1185 %
+Root relative squared error            109.9384 %
+Total Number of Instances              768     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.860    0.757    0.679      0.860    0.759      0.128    0.632     0.765     0
+                 0.243    0.140    0.481      0.243    0.323      0.128    0.632     0.429     1
+Weighted Avg.    0.645    0.542    0.610      0.645    0.607      0.128    0.632     0.647     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 430  70 |   a = 0
+ 203  65 |   b = 1
+

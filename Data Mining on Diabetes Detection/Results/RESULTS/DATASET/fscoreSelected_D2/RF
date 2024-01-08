@@ -1,0 +1,49 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     FScoreSelected_dataset_2-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last
+Instances:    2535
+Attributes:   6
+              Systolic blood pressure
+              Diastolic blood pressure
+              BMI
+              Family history of diabetes
+              History of aborted baby
+              Result of diabetes screening
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 0.28 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        2319               91.4793 %
+Incorrectly Classified Instances       216                8.5207 %
+Kappa statistic                          0.1778
+Mean absolute error                      0.1332
+Root mean squared error                  0.273 
+Relative absolute error                 84.5907 %
+Root relative squared error             97.3654 %
+Total Number of Instances             2535     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.128    0.011    0.519      0.128    0.206      0.228    0.754     0.257     0
+                 0.989    0.872    0.923      0.989    0.955      0.228    0.754     0.967     1
+Weighted Avg.    0.915    0.798    0.889      0.915    0.891      0.228    0.754     0.906     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+   28  190 |    a = 0
+   26 2291 |    b = 1
+
